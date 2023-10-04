@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+input,
+button {
+  height: 70px;
+  outline: none;
+}
+
+input {
+  width: 100%;
+  text-align: right;
+  border: none;
+  background: #5B5B5D;
+  padding-right: 1rem;
+  font-size: 3rem;
+}
+.container{
+  width: 16rem;
+  background-color: #3C3C3C;
+  border-radius: 1rem;
+  margin : 2rem;
+}
+
+.circle {
+  padding: 0.5rem 0.7rem;
+  letter-spacing: 0.5rem;
+  text-align: left;
+  display: flex;
+}
+.red-c {
+  color: #FB4646;
+}
+.yell-c {
+  color: #FCB024;
+}
+.grn-c {
+  color: #28C131;
+}
+
+button {
+  background: #828284;
+  border: 1px solid #454448;
+  font-size: 2rem;
+}
+.button-wrap {
+  display: grid;
+  /* 한 줄에 4개씩, 모두 동일한 비율 적용(1:1:1:1) */
+  grid-template-columns: repeat(4, 1fr);
+}
+/* nth-child(4n+2): 4번째 요소마다 스타일을 적용하는데 처음에만 두번째에 적용 */
+button:nth-child(4n),
+button:last-child {
+  background-color: orange;
+}
+
+button:hover {
+  opacity: .5;
+}
+
+.zero {
+  grid-column: 1/3;
+}
