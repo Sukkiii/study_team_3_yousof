@@ -2,17 +2,11 @@
   box-sizing: border-box;
   color: white;
 }
-
-input,
-button {
-  height: 70px;
-  outline: none;
-}
-.container{
+.container {
   width: 20rem;
   background-color: #313235;
   border-radius: 1rem;
-  margin : 2rem;
+  margin: 2rem;
 }
 .circle {
   padding: 0.5rem 0.7rem;
@@ -20,12 +14,15 @@ button {
   text-align: left;
   display: flex;
 }
+
 .red-c {
   color: #FB4646;
 }
+
 .yell-c {
   color: #FCB024;
 }
+
 .grn-c {
   color: #28C131;
 }
@@ -38,8 +35,11 @@ input {
   padding-top: 1.5rem;
   font-size: 4rem;
   border: none;
+  outline: none;
 }
 button {
+  height: 70px;
+  outline: none;
   background: #828284;
   border: 1px solid #636467;
   font-size: 1.8rem;
@@ -51,7 +51,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   }
-.button-wrap {
+.button-store {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
