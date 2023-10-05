@@ -10,7 +10,9 @@ buttons.forEach(button => {
 
     switch (button.dataset.type) {
       case 'operator':
-      currentValue += buttonText;
+      if(!isNaN(currentValue[currentValue.length - 1])) {
+        currentValue += button.dataset.operator;
+      }
       break;
       case 'ac':
         currentValue = '0';

@@ -59,10 +59,6 @@ button:nth-child(4n),
 button:last-child {
   background-color: #F1A33C;
 }
-button:nth-child(4n),
-button:last-child {
-  background-color: #F1A33C;
-}
 button:hover {
   opacity: .5;
 }
