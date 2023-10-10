@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawing Canvas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="./canvas.png" alt="canvas img" />
+    <h1>Drawing Canvas</h1>
+  </header>
+  <body>
+    <div class="settings">
+      <div class="colors-settings">
+        <div class="pick-colors">
+          <div class="pick-color" style="background-color: pink;"></div>
+          <div class="pick-color" style="background-color: red;"></div>
+          <div class="pick-color" style="background-color: orange;"></div>
+          <div class="pick-color" style="background-color: yellow;"></div>
+          <div class="pick-color" style="background-color: greenyellow;"></div>
+          <div class="pick-color" style="background-color: green;"></div>
+          <div class="pick-color" style="background-color: lightblue;"></div>
+          <div class="pick-color" style="background-color: blue;"></div>
+          <div class="pick-color" style="background-color: violet;"></div>
+          <div class="pick-color" style="background-color: purple;"></div>
+          <div class="pick-color" style="background-color: black;"></div>
+          <div class="pick-color" style="background-color: white;"></div>
+        </div>
+        <div class="pick-brush">
+          <span>brush-thick</span>
+          <select name="brush-thick" id="brush-thick">
+            <option value="-" class="1px">1px</option>
+            <option value="-" class="2px">2px</option>
+            <option value="-" class="5px">5px</option>
+            <option value="-" class="10px">10px</option>
+          </select>
+        </div>
+        <div class="select-drawing">
+          <button class="just-brush">BRUSH</button>
+          <button class="painting">PAINTING</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <canvas style="background-color:white" class="canvas">
+      </canvas>
+    </div>
+  </body>
+  <footer>
+    <button class="delete-all">Delete All</button>
+  </footer>
+</body>
+<script src="./colorpicker.js"></script>
+</html>

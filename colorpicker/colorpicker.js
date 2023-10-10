@@ -1,0 +1,1 @@
+const selectDrawing = 0;
