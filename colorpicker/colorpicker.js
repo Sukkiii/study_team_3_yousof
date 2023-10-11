@@ -1,9 +1,11 @@
 const canvas = document.querySelector('.canvas');
 const drawLine = canvas.getContext('2d');
 //https:developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
+const colors = document.getElementsByClassName('pick-color');
+const thickness = document.getElementById("brush-thick");
 
 drawLine.strokeStyle = "#000000";
-drawLine.lineWidth = 2.5;
+drawLine.lineWidth = 1;
 
 let drawing = false;
 
@@ -27,11 +29,23 @@ function onMouseup(e) {
   drawing = false;
 }
 
+function changeColor(e) {
+  const color = e.target.style.backgroundColor;
+  drawLine.strokeStyle = color;
+}
+
+function changeThickness(e) {
+  const thick = e.target.value;
+  console.log(thick); //왜 undefined가 찍힐까....
+  drawLine.lineWidth = thick;
+}
+
 canvas.addEventListener("mousedown", onMouseDown);
 canvas.addEventListener('mousemove', onMouseMove);
 canvas.addEventListener("mouseup", onMouseup);
-// canvas.addEventListener('mouseleave', stopDrawing);
 
-// canvas.addEventListener("mousedown", onMouseDown);
-// canvas.addEventListener("mousemove", onMouseMove);
-// canvas.addEventListener("mouseup", onMouseUp);
+Array.from(colors).forEach(color => {
+  color.addEventListener('click', changeColor)
+});
+
+thickness.addEventListener('change', changeThickness);
